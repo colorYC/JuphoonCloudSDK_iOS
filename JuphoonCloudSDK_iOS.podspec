@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
   end
   end
 
-  s.vendored_frameworks  = "JC_SDK_iOS_1.26/framework/JCSDKOC.framework"
+  s.vendored_frameworks  = "framework/JCSDKOC.framework"
   s.vendored_libraries = "JC_SDK_iOS_1.26/lib/ios/libmtc.a", "JC_SDK_iOS_1.26/lib/ios/libzmf.a"
   s.frameworks = 'AVFoundation', 'Security', 'AudioToolbox', 'CoreMedia', 'AssetsLibrary', 'CoreVideo', 'CFNetwork', 'CoreMotion', 'GLKit', 'ReplayKit', 'PushKit', 'SystemConfiguration', 'VideoToolbox'
   s.libraries = 'c++', 'resolv', 'z'
