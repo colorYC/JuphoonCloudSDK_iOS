@@ -15,23 +15,23 @@ Pod::Spec.new do |s|
   s.subspec 'include' do |include|
 
   include.subspec 'grape' do |grape|
-  grape.source_files = 'JC_SDK_iOS_1.26/include/grape/*.h'
+  grape.source_files = 'include/grape/*.h'
 
   include.subspec 'lemon' do |lemon|
-  lemon.source_files = 'JC_SDK_iOS_1.26/include/lemon/*.h'
+  lemon.source_files = 'include/lemon/*.h'
 
   lemon.subspec 'mtc' do |mtc|
-  mtc.source_files = 'JC_SDK_iOS_1.26/include/lemon/mtc/*.h'
+  mtc.source_files = 'include/lemon/mtc/*.h'
 
   include.subspec 'avatar' do |avatar|
   
   avatar.subspec 'zos' do |zos|
-  zos.source_files = 'JC_SDK_iOS_1.26/include/avatar/zos/*.h'
+  zos.source_files = 'include/avatar/zos/*.h'
 
   zos.subspec 'os' do |os|
   
   os.subspec 'os' do |ios|
-  ios.source_files = 'JC_SDK_iOS_1.26/include/avatar/zos/os/ios/*.h'
+  ios.source_files = 'include/avatar/zos/os/ios/*.h'
 
   end
   end
