@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JuphoonCloudSDK_iOS"
-  s.version      = "1.20"
+  s.version      = "1.26"
   s.summary      = "Juphoon SDK."
   s.description  = "JCSDK for video talk, broadcasting and message service"
   s.homepage     = "http://developer.juphoon.com/cn/download/"
@@ -10,28 +10,28 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.ios.deployment_target = '9.0'
   s.requires_arc = true
-  s.source       = { :http => 'https://justalkcloud.com/wo_upload/JC-SDK-iOS-V1_20.tar.gz'}
+  s.source       = { :http => 'https://justalkcloud.com/wo_upload/JC_SDK_iOS_1.26.tar.gz'}
 
   s.subspec 'include' do |include|
 
   include.subspec 'grape' do |grape|
-  grape.source_files = 'JC-SDK-iOS-V1_20/include/grape/*.h'
+  grape.source_files = 'JC_SDK_iOS_1.26/include/grape/*.h'
 
   include.subspec 'lemon' do |lemon|
-  lemon.source_files = 'JC-SDK-iOS-V1_20/include/lemon/*.h'
+  lemon.source_files = 'JC_SDK_iOS_1.26/include/lemon/*.h'
 
   lemon.subspec 'mtc' do |mtc|
-  mtc.source_files = 'JC-SDK-iOS-V1_20/include/lemon/mtc/*.h'
+  mtc.source_files = 'JC_SDK_iOS_1.26/include/lemon/mtc/*.h'
 
   include.subspec 'avatar' do |avatar|
   
   avatar.subspec 'zos' do |zos|
-  zos.source_files = 'JC-SDK-iOS-V1_20/include/avatar/zos/*.h'
+  zos.source_files = 'JC_SDK_iOS_1.26/include/avatar/zos/*.h'
 
   zos.subspec 'os' do |os|
   
   os.subspec 'os' do |ios|
-  ios.source_files = 'JC-SDK-iOS-V1_20/include/avatar/zos/os/ios/*.h'
+  ios.source_files = 'JC_SDK_iOS_1.26/include/avatar/zos/os/ios/*.h'
 
   end
   end
@@ -42,11 +42,11 @@ Pod::Spec.new do |s|
   end
   end
 
-  s.vendored_frameworks  = "JC-SDK-iOS-V1_20/JCSDKOC.framework"
-  s.vendored_libraries = "JC-SDK-iOS-V1_20/lib/ios/libmtc.a", "JC-SDK-iOS-V1_20/lib/ios/libzmf.a"
+  s.vendored_frameworks  = "JC_SDK_iOS_1.26/framework/JCSDKOC.framework"
+  s.vendored_libraries = "JC_SDK_iOS_1.26/lib/ios/libmtc.a", "JC_SDK_iOS_1.26/lib/ios/libzmf.a"
   s.frameworks = 'AVFoundation', 'Security', 'AudioToolbox', 'CoreMedia', 'AssetsLibrary', 'CoreVideo', 'CFNetwork', 'CoreMotion', 'GLKit', 'ReplayKit', 'PushKit', 'SystemConfiguration', 'VideoToolbox'
   s.libraries = 'c++', 'resolv', 'z'
-  s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(PODS_ROOT)/JCLibYCC123/JC-SDK-iOS-V1_20/include"}
+  s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(PODS_ROOT)/JCLibYCC123/JC_SDK_iOS_1.26/include"}
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 armv7 armv7s arm64e x86_64'}
 
   end
