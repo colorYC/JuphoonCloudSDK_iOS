@@ -43,10 +43,10 @@ Pod::Spec.new do |s|
   end
 
   s.vendored_frameworks  = "framework/JCSDKOC.framework"
-  s.vendored_libraries = "JC_SDK_iOS_1.26/lib/ios/libmtc.a", "JC_SDK_iOS_1.26/lib/ios/libzmf.a"
+  s.vendored_libraries = "lib/ios/libmtc.a", "lib/ios/libzmf.a"
   s.frameworks = 'AVFoundation', 'Security', 'AudioToolbox', 'CoreMedia', 'AssetsLibrary', 'CoreVideo', 'CFNetwork', 'CoreMotion', 'GLKit', 'ReplayKit', 'PushKit', 'SystemConfiguration', 'VideoToolbox'
   s.libraries = 'c++', 'resolv', 'z'
-  s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(PODS_ROOT)/JCLibYCC123/JC_SDK_iOS_1.26/include"}
+  s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(PODS_ROOT)/JC_SDK_iOS_1.26/include"}
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 armv7 armv7s arm64e x86_64'}
 
   end
